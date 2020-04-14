@@ -20,6 +20,7 @@ install:
  - . ../poky/oe-init-build-env $TRAVIS_BUILD_DIR/build
  - bitbake-layers add-layer ../../meta-intel
  - bitbake-layers add-layer ../../meta-acrn
+ - bitbake-layers add-layer ../../meta-openembedded/meta-oe
 
 script:
  - yocto-check-layer ../../meta-acrn --dependency ../../meta-intel 
